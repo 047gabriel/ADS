@@ -21,19 +21,19 @@ const rl = require("readline-sync")
 // let linha = 0
 // let coluna = 0
 
-// for(let i = 0; i < m.length; i++){
-//   linha++
-//   coluna++
+for(let i = 0; i < m.length; i++){
+  linha++
+  coluna++
 
-//   for(let j = 0; j < m[0].length; j++){
-//   }
-// }
-// console.log(`${linha} linha(s) e ${coluna} coluna(s) na matriz`)
-// console.log(m[1][1])
+  for(let j = 0; j < m[0].length; j++){
+  }
+}
+console.log(`${linha} linha(s) e ${coluna} coluna(s) na matriz`)
+console.log(m[1][1])
 
-// let ultimoValor = m[m.length - 1][m[0].length -1]
+let ultimoValor = m[m.length - 1][m[0].length -1]
 
-// console.log(`Ultimo valor: ${ultimoValor}`)
+console.log(`Ultimo valor: ${ultimoValor}`)
 
 console.log("_______________________________");
 
@@ -53,15 +53,15 @@ console.log("_______________________________");
 
 // // → Seu código aqui:
 
-// let soma = 0
-// for(let i = 0; i < m.length; i++){
-//   for(let j = 0; j < m[i].length; j++){
-//     soma += m[i][j]
+let soma = 0
+for(let i = 0; i < m.length; i++){
+  for(let j = 0; j < m[i].length; j++){
+    soma += m[i][j]
 
-//     console.log(`m[${i}][${j}] = ${soma}`)
-//   }
-// }
-// console.log(`Soma de todos os elementos: ${soma}`)
+    console.log(`m[${i}][${j}] = ${soma}`)
+  }
+}
+console.log(`Soma de todos os elementos: ${soma}`)
 
 console.log("_______________________________");
 
@@ -80,34 +80,34 @@ console.log("_______________________________");
 
 // → Seu código aqui:
 
-// let maior = m[0][0]
-// let menor = m[0][0]
+let maior = m[0][0]
+let menor = m[0][0]
 
-// let linhaColuna
-// let linhaMaior
-// let colunaMaior
-// let linhaMenor
-// let colunaMenor
+let linhaColuna
+let linhaMaior
+let colunaMaior
+let linhaMenor
+let colunaMenor
 
 
-// for(let i = 0; i < m.length; i++){
-//   for(let j = 0; j < m[0].length; j++){
+for(let i = 0; i < m.length; i++){
+  for(let j = 0; j < m[0].length; j++){
 
-//     if(m[i][j]  > maior){
-//       maior = m[i][j]
-//       linhaMaior = i
-//       colunaMaior = j
+    if(m[i][j]  > maior){
+      maior = m[i][j]
+      linhaMaior = i
+      colunaMaior = j
 
-//     }
-//     if(m[i][j] < menor){
-//       menor = m[i][j]
-//       linhaMenor = i
-//       colunaMenor = j
-//     }
-//   }
-// }
-// console.log(`Numero: ${maior} | Linha = ${linhaMaior} | Coluna = ${colunaMaior}`)
-// console.log(`Numero: ${menor} | Linha = ${linhaMenor} | Coluna = ${colunaMenor}`)
+    }
+    if(m[i][j] < menor){
+      menor = m[i][j]
+      linhaMenor = i
+      colunaMenor = j
+    }
+  }
+}
+console.log(`Numero: ${maior} | Linha = ${linhaMaior} | Coluna = ${colunaMaior}`)
+console.log(`Numero: ${menor} | Linha = ${linhaMenor} | Coluna = ${colunaMenor}`)
 
 
 console.log("_______________________________");
@@ -123,41 +123,41 @@ console.log("_______________________________");
 
 // → Seu código aqui:
 
-// const m = [
-//   [12, 1, 25],
-//   [3, 18, 9],
-//   [31, 14, 22],
-// ];
+const m = [
+  [12, 1, 25],
+  [3, 18, 9],
+  [31, 14, 22],
+];
 
-// let somaLinha = 0
-// let somaColuna = 0
-// let somaDiagonal = 0
+let somaLinha = 0
+let somaColuna = 0
+let somaDiagonal = 0
 
-// for (let i = 0; i < m.length; i++) {
-//   for (let j = 0; j < m[i].length; j++) {
+for (let i = 0; i < m.length; i++) {
+  for (let j = 0; j < m[i].length; j++) {
 
-//     somaLinha += m[i][j]
+    somaLinha += m[i][j]
 
-//   }
-//   console.log(`m linha[${i}] = ${somaLinha}`)
-//   somaLinha = 0
-// }
+  }
+  console.log(`m linha[${i}] = ${somaLinha}`)
+  somaLinha = 0
+}
 
-// for(let i = 0; i < m[0].length; i++){
-//   for(let j = 0; j < m[i].length; j ++){
+for(let i = 0; i < m[0].length; i++){
+  for(let j = 0; j < m[i].length; j ++){
 
-//     somaColuna += m[j][i]
-//   }
-//   console.log(`m coluna[${i}] = ${somaColuna}`)
-//   somaColuna = 0
-// }
+    somaColuna += m[j][i]
+  }
+  console.log(`m coluna[${i}] = ${somaColuna}`)
+  somaColuna = 0
+}
 
-// for(let i = 0; i < m.length; i++){
+for(let i = 0; i < m.length; i++){
 
-//     somaDiagonal += m[i][i]
+    somaDiagonal += m[i][i]
 
-//   }
-//   console.log(`m diaonal principal = ${somaDiagonal}`)
+  }
+  console.log(`m diaonal principal = ${somaDiagonal}`)
   
   console.log("_______________________________");
 
@@ -172,17 +172,17 @@ console.log("_______________________________");
 
 // → Seu código aqui:
 
-// let m = []
-// let linhas = rl.questionInt('Quantas linhas? ')
-// let colunas = rl.questionInt('Quantas colunas? ')
+let ma = []
+let linhas = rl.questionInt('Quantas linhas? ')
+let colunas = rl.questionInt('Quantas colunas? ')
 
-// for(let i = 0; i < linhas; i++){
-//   m[i] = []
+for(let i = 0; i < linhas; i++){
+  ma[i] = []
 
-//   for(let j = 0; j < colunas; j++){
-//     m[i][j] = rl.questionInt(`Digite m[${i}][${j}]: \n`)
-//     console.table(m)
-//   }
-// }
-// console.table(m)
+  for(let j = 0; j < colunas; j++){
+    ma[i][j] = rl.questionInt(`Digite ma[${i}][${j}]: \n`)
+    console.table(ma)
+  }
+}
+console.table(ma)
 console.log("_______________________________");
