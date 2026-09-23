@@ -30,7 +30,7 @@ function tamanhoMin(senha, min) {
         return true
     return false
 }
-// console.log(tamanhoMin('12345', 5))
+console.log(tamanhoMin('12345', 5))
 
 // function temNum(senha){
 //     const anyNum = senha.split('')

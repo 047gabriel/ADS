@@ -19,14 +19,14 @@ const rl = require('readline-sync')
 
 // → Seu código aqui:
 
-// function quadrado(n){
-//     let quad = n ** 2
-//     console.log(`${n} ao quadrado = ${quad}`)
-//     return n ** 2
-// }
-// quadrado(3)
-// quadrado(7)
-// quadrado(10)
+function quadrado(n){
+    let quad = n ** 2
+    console.log(`${n} ao quadrado = ${quad}`)
+    return n ** 2
+}
+quadrado(3)
+quadrado(7)
+quadrado(10)
 
 
 console.log("_______________________________");
@@ -87,7 +87,7 @@ function ehPar(n){
         return false
     }
 }
-// console.log(ehPar(1))
+console.log(ehPar(1))
 
 function ehMaiorDeIdade(age){
     if(age >= 18){
@@ -96,7 +96,7 @@ function ehMaiorDeIdade(age){
         return false
     }
 }
-// console.log(ehMaiorDeIdade(16))
+console.log(ehMaiorDeIdade(16))
 
 function ehVogal(v){
     if(v == 'a' || v == 'A' || v == 'e' || v == 'E' || v == 'i' || v == 'I' || v == 'o' || v == 'O' || v == 'u' || v == 'U'){
@@ -105,7 +105,7 @@ function ehVogal(v){
         return false
     }
 }
-// console.log(ehVogal('a'))
+console.log(ehVogal('a'))
 console.log("_______________________________");
 
 
@@ -149,7 +149,7 @@ function calcularIMC(weigth, heigth){
     return imc.toFixed(2)
 }
 
-// console.log(calcularIMC(peso, altura), classificarIMC(imc))
+console.log(calcularIMC(peso, altura), classificarIMC(imc))
 
 console.log("_______________________________");
 
@@ -171,9 +171,9 @@ function precoComDesconto(valor, desconto = 10){
     return valor - (valor * desconto / 100)
 }
 
-// console.log(`Final: ${precoComDesconto(100, 10)}`)
-// console.log(`Final: ${precoComDesconto(100, 25)}`)
-// console.log(`Final: ${precoComDesconto(250, 5)}`)
+console.log(`Final: ${precoComDesconto(100, 10)}`)
+console.log(`Final: ${precoComDesconto(100, 25)}`)
+console.log(`Final: ${precoComDesconto(250, 5)}`)
 
 console.log("_______________________________");
 
@@ -228,10 +228,10 @@ function menorDoVetor(arr){
     return menor
 }
 
-// console.log(somarVetor(numeros))
-// console.log(mediaVetor(somarVetor(numeros)))
-// console.log(maiorDoVetor(numeros))
-// console.log(menorDoVetor(numeros))
+console.log(somarVetor(numeros))
+console.log(mediaVetor(somarVetor(numeros)))
+console.log(maiorDoVetor(numeros))
+console.log(menorDoVetor(numeros))
 
 console.log("_______________________________");
 
@@ -267,22 +267,22 @@ function situacaoA(nota){
     return 'Reprovado(a)'
 }
 
-// console.log(criarAluno('Gabriel', 21, 10))
+console.log(criarAluno('Gabriel', 21, 10))
 
 let alunos = []
 
-// for(let i = 0; i < 3; i++){
+for(let i = 0; i < 3; i++){
     
-//     let nome = rl.question('Nome do aluno: ')
-//     let idade = rl.questionInt('Idade do aluno: ')
-//     let nota = rl.questionFloat('Nota do aluno: ')
+    let nome = rl.question('Nome do aluno: ')
+    let idade = rl.questionInt('Idade do aluno: ')
+    let nota = rl.questionFloat('Nota do aluno: ')
 
-//     const aluno = criarAluno(nome, idade, nota)
+    const aluno = criarAluno(nome, idade, nota)
     
-//     alunos.push(aluno)
-// }
+    alunos.push(aluno)
+}
 
-// console.table(alunos)
+console.table(alunos)
 
 // ------------------------------------------------------------
 // EXERCÍCIO 8 – Função que retorna vetor
@@ -307,7 +307,7 @@ function gerarPares(inicio, fim){
     }
     return pares
 }
-// console.log(gerarPares(1, 20))
+console.log(gerarPares(1, 20))
 
 function filtrarMaioresQue(vet, limite){
     const filtrado = []
@@ -319,7 +319,7 @@ function filtrarMaioresQue(vet, limite){
     return filtrado
 }
 
-// console.log(filtrarMaioresQue(numeros, 10))
+console.log(filtrarMaioresQue(numeros, 10))
 
 const pares = gerarPares(0,50)
 console.log(filtrarMaioresQue(pares, 30))
