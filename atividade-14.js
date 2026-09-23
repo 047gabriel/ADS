@@ -20,15 +20,15 @@ const rl = require('readline-sync')
 
 // → Seu código aqui:
 
-// function saudacao(){
-//     console.log(`
-//            "Olá!"
-//    "Bem-vindo(a) ao curso de JavaScript."
-//    "Bons estudos!"
-//         `)
-// }
-// saudacao()
-// saudacao()
+function saudacao(){
+    console.log(`
+           "Olá!"
+   "Bem-vindo(a) ao curso de JavaScript."
+   "Bons estudos!"
+        `)
+}
+saudacao()
+saudacao()
 
 console.log("_______________________________");
 
@@ -46,19 +46,19 @@ console.log("_______________________________");
 
 // → Seu código aqui:
 
-// function linha(){
-//     console.log("----------------------------------------")
-// }
-// function titulo(){
-//     console.log("         RELATÓRIO MENSAL              ")
-// }
-// function cabecalho(){
-//     linha()
-//     titulo()
-//     linha()
-// }
-// cabecalho()
-// console.log("_______________________________");
+function linha(){
+    console.log("----------------------------------------")
+}
+function titulo(){
+    console.log("         RELATÓRIO MENSAL              ")
+}
+function cabecalho(){
+    linha()
+    titulo()
+    linha()
+}
+cabecalho()
+console.log("_______________________________");
 
 
 // ------------------------------------------------------------
@@ -83,32 +83,32 @@ console.log("_______________________________");
 
 // → Seu código aqui:
 
-// function meusDados() {
-//     nome = rl.question('Digite seu nome: ')
-//     idade = rl.questionInt('Digite sua idade: ')
-//     cidade = rl.question('Digite a sua cidade: ')
-// }
-// function exibirDados() {
-//     meusDados()
-//     console.log(`
-//         Nome: ${nome}
-//         Idade: ${idade}
-//         Cidade: ${cidade}
-//         `)
-// }
-// function coletaDados2() {
-//     let usuarios = []
-//     for (let i = 0; i < 2; i++) {
-//         let usuario = {
-//             nome: rl.question('Digite seu nome: '),
-//             idade: rl.questionInt('Digite sua idade: '),
-//             cidade: rl.question('Digite a sua cidade: ')
-//         }
-//         usuarios.push(usuario)
-//     }
-//     console.log(usuarios)
-// }
-// coletaDados2()
+function meusDados() {
+    nome = rl.question('Digite seu nome: ')
+    idade = rl.questionInt('Digite sua idade: ')
+    cidade = rl.question('Digite a sua cidade: ')
+}
+function exibirDados() {
+    meusDados()
+    console.log(`
+        Nome: ${nome}
+        Idade: ${idade}
+        Cidade: ${cidade}
+        `)
+}
+function coletaDados2() {
+    let usuarios = []
+    for (let i = 0; i < 2; i++) {
+        let usuario = {
+            nome: rl.question('Digite seu nome: '),
+            idade: rl.questionInt('Digite sua idade: '),
+            cidade: rl.question('Digite a sua cidade: ')
+        }
+        usuarios.push(usuario)
+    }
+    console.log(usuarios)
+}
+coletaDados2()
 
 console.log("_______________________________");
 // ------------------------------------------------------------
@@ -122,16 +122,16 @@ console.log("_______________________________");
 
 // → Seu código aqui:
 
-// function sortear(){
-//     let aleatorio = (Math.floor(Math.random() * 100) + 1)
-//     console.log(`Número sorteado: ${aleatorio}`)
-// }
-// function sortearCinco(){
-//     for(let i = 1; i <= 5; i++){
-//         sortear()
-//     }
-// }
-// sortearCinco()
+function sortear(){
+    let aleatorio = (Math.floor(Math.random() * 100) + 1)
+    console.log(`Número sorteado: ${aleatorio}`)
+}
+function sortearCinco(){
+    for(let i = 1; i <= 5; i++){
+        sortear()
+    }
+}
+sortearCinco()
 console.log("_______________________________");
 // ------------------------------------------------------------
 // EXERCÍCIO 5 – Tabela de multiplicação
@@ -147,27 +147,27 @@ console.log("_______________________________");
 
 // → Seu código aqui:
 
-// function tabuadaDoCinco() {
-//     let soma = 1
-//     let numero = 5
+function tabuadaDoCinco() {
+    let soma = 1
+    let numero = 5
 
-//     for (let i = 1; i <= 10; i++) {
-//         soma = numero * i
-//         console.log(`${numero} * ${i} = ${soma}`)
-//     }
-// }
-// tabuadaDoCinco()
+    for (let i = 1; i <= 10; i++) {
+        soma = numero * i
+        console.log(`${numero} * ${i} = ${soma}`)
+    }
+}
+tabuadaDoCinco()
 
-// function tabuadaDoSete() {
-//     soma = 1
-//     let numero = 7
+function tabuadaDoSete() {
+    soma = 1
+    let numero = 7
 
-//     for (let i = 1; i <= 10; i++) {
-//         soma = numero * i
-//         console.log(`${numero} * ${i} = ${soma}`)
-//     }
-// }
-// tabuadaDoSete()
+    for (let i = 1; i <= 10; i++) {
+        soma = numero * i
+        console.log(`${numero} * ${i} = ${soma}`)
+    }
+}
+tabuadaDoSete()
 console.log("_______________________________");
 
 
@@ -182,15 +182,15 @@ console.log("_______________________________");
 
 // → Seu código aqui:
 
-// function converterTemperatura(){
-//     let temp = rl.questionFloat('Digite a temperatura para converter: ')
-//     let fah = temp * 1.8 + 32
-//     console.log(`${temp}C° equivalem a ${fah}F°`)
-// }
+function converterTemperatura(){
+    let temp = rl.questionFloat('Digite a temperatura para converter: ')
+    let fah = temp * 1.8 + 32
+    console.log(`${temp}C° equivalem a ${fah}F°`)
+}
 
-// for(let i = 0; i <= 2; i++){
-//     converterTemperatura()
-// }
+for(let i = 0; i <= 2; i++){
+    converterTemperatura()
+}
 
 console.log("_______________________________");
 
@@ -205,15 +205,15 @@ const filmes = ["Matrix", "Interestelar", "Origem", "Senhor dos Anéis"];
 
 // → Seu código aqui:
 
-// function listarFilmes(){
-//     for(let i = 0; i < filmes.length; i++){
-//         console.log(`${[i]} - ${filmes[i]}`)
-//     }
-// }
+function listarFilmes(){
+    for(let i = 0; i < filmes.length; i++){
+        console.log(`${[i]} - ${filmes[i]}`)
+    }
+}
 
-// for(let i = 0; i < 2; i++){
-//     listarFilmes()
-// }
+for(let i = 0; i < 2; i++){
+    listarFilmes()
+}
 console.log("_______________________________");
 
 
@@ -233,8 +233,8 @@ console.log("_______________________________");
 
 // → Seu código aqui:
 
-// function limparTela(){
-//     console.log(`
+function limparTela(){
+    console.log(`
 
 
 
@@ -263,44 +263,44 @@ console.log("_______________________________");
 
 
 
-//         `)
-// }
+        `)
+}
 
-// function banner(){
-//     console.log('====localHost/2004====')
-// }
+function banner(){
+    console.log('====localHost/2004====')
+}
 
-// function pedirNome(){
-//     do{
-//         let nome = rl.question('Digite seu nome: ')
-//         valido = true
+function pedirNome(){
+    do{
+        let nome = rl.question('Digite seu nome: ')
+        valido = true
 
-//         if(nome === ''){
-//             console.log('Nome inexistente, digite novamente')
+        if(nome === ''){
+            console.log('Nome inexistente, digite novamente')
 
-//         } else {
-//             console.log(`Olá ${nome}, Seja Bem Vindo(a) ao Programa!`)
-//             valido = false
-//         }
-//     } while(valido)
+        } else {
+            console.log(`Olá ${nome}, Seja Bem Vindo(a) ao Programa!`)
+            valido = false
+        }
+    } while(valido)
 
-// }
+}
 
-// function rodape(nome){
+function rodape(nome){
 
-//     console.log(`
-//         ${new Date().getFullYear()} | Sistemas desenvolvido por ${nome}
-//         `)
-// }
+    console.log(`
+        ${new Date().getFullYear()} | Sistemas desenvolvido por ${nome}
+        `)
+}
 
-// function main(){
-//     limparTela()
-//     banner()
-//     pedirNome()
-//     rodape('Gabriel Freitas')
-// }
+function main(){
+    limparTela()
+    banner()
+    pedirNome()
+    rodape('Gabriel Freitas')
+}
 
-// main()
+main()
 console.log("_______________________________");
 
 
