@@ -17,15 +17,15 @@ const rl = require('readline-sync')
 
 // → Seu código aqui:
 
-// let cidades = ['Jaraguá', 'Joinville', 'Blumenau', 'Navegantes', 'Penha']
+let cidades = ['Jaraguá', 'Joinville', 'Blumenau', 'Navegantes', 'Penha']
 
-// for(const cidade of cidades){
-//       console.log(cidade)
+for(const cidade of cidades){
+      console.log(cidade)
 
-// }
-// console.log(`Primeira cidade: ${cidades[0]}`)
-// console.log(`Ultima cidade: ${cidades[cidades.length-1]}`)
-// console.log(cidades.length)
+}
+console.log(`Primeira cidade: ${cidades[0]}`)
+console.log(`Ultima cidade: ${cidades[cidades.length-1]}`)
+console.log(cidades.length)
 
 console.log("_______________________________");
 
@@ -41,12 +41,12 @@ const numeros = [12, 7, 25, 3, 18, 9, 31, 14];
 
 // → Seu código aqui:
 
-// soma = 0
-// for(const numero of numeros){
-//       soma += numero
-// }
-// let media = soma / numeros.length
-// console.log(`Soma: ${soma} | Média: ${media.toFixed(2)}`)
+soma = 0
+for(const numero of numeros){
+      soma += numero
+}
+let media = soma / numeros.length
+console.log(`Soma: ${soma} | Média: ${media.toFixed(2)}`)
 
 console.log("_______________________________");
 
@@ -60,19 +60,19 @@ const temperaturas = [22.5, 19.0, 27.3, 18.7, 30.1, 25.4, 21.8];
 // c) Exiba: "Maior: <maior>°C | Menor: <menor>°C"
 
 // → Seu código aqui:
-// let maior = temperaturas[0]
-// let menor = temperaturas[0]
+let maior = temperaturas[0]
+let menor = temperaturas[0]
 
-// for(let temperatura of temperaturas){
-//       if(temperatura > maior){
-//             maior = temperatura
-//       }
-//       if(temperatura < menor){
-//             menor = temperatura
-//       }
-// }
+for(let temperatura of temperaturas){
+      if(temperatura > maior){
+            maior = temperatura
+      }
+      if(temperatura < menor){
+            menor = temperatura
+      }
+}
 
-// console.log(`Maior: ${maior}°C | Menor: ${menor}°C`)
+console.log(`Maior: ${maior}°C | Menor: ${menor}°C`)
 
 console.log("_______________________________");
 
@@ -90,22 +90,22 @@ const listaNumeros = [4, 7, 10, 13, 16, 19, 22, 25, 28];
 
 // → Seu código aqui:
 
-// let pares = []
-// let impares = []
+let pares = []
+let impares = []
 
-// for(const numeros of listaNumeros){
-//       if(numeros % 2 === 0){
-//             pares.push(numeros)
-//       }
-//       else{
-//             impares.push(numeros)
-//             impares.length
-//       }
-// }
-// console.log(`
-//       ${pares.length} Numeros pares: ${pares}
-//       ${impares.length} Numeros impares: ${impares}`)
-//       console.log(`{listaNumeros.length}`)
+for(const numeros of listaNumeros){
+      if(numeros % 2 === 0){
+            pares.push(numeros)
+      }
+      else{
+            impares.push(numeros)
+            impares.length
+      }
+}
+console.log(`
+      ${pares.length} Numeros pares: ${pares}
+      ${impares.length} Numeros impares: ${impares}`)
+      console.log(`{listaNumeros.length}`)
 
 console.log("_______________________________");
 
@@ -144,22 +144,22 @@ console.log("_______________________________");
 
 // → Seu código aqui:
 
-// let produtos = []
-// let quantos = rl.questionInt('Quantos produtos deseja cadastrar? ')
-// let qtd = 0
+let produtos = []
+let quantos = rl.questionInt('Quantos produtos deseja cadastrar? ')
+let qtd = 0
 
-// for (let i = 0; i < quantos; i++) {
+for (let i = 0; i < quantos; i++) {
 
-//       let produto = {
-//             nome: rl.question('Digite o nome do produto: ')
-//       }
-//       produtos.push(produto)
-//       qtd++
-// }
-// for (let i = 0; i < produtos.length; i++) {
+      let produto = {
+            nome: rl.question('Digite o nome do produto: ')
+      }
+      produtos.push(produto)
+      qtd++
+}
+for (let i = 0; i < produtos.length; i++) {
 
-//       console.log(produtos[i])
-// } console.log(`${qtd} produtos cadastrados.`)
+      console.log(produtos[i])
+} console.log(`${qtd} produtos cadastrados.`)
 
 console.log("_______________________________");
 
@@ -176,22 +176,22 @@ const alunos = ["Ana", "Bruno", "Carla", "Diego", "Eva"];
 
 // → Seu código aqui:
 
-// let busca = rl.question('Digite o nome para buscar: ')
-// let iachou = -1
+let busca = rl.question('Digite o nome para buscar: ')
+let iachou = -1
 
-// for (let i = 0; i < alunos.length; i++) {
+for (let i = 0; i < alunos.length; i++) {
 
-//       if (busca === alunos[i]) {
-//             iachou = [i]
-//             break
-//       }
-// }
+      if (busca === alunos[i]) {
+            iachou = [i]
+            break
+      }
+}
 
-// if (iachou === -1) {
-//       console.log(`${busca} não foi encontrado(a)!`)
-// } else {
-//       console.log(`${busca} está matrículado(a) (Índice ${iachou})`)
-// }
+if (iachou === -1) {
+      console.log(`${busca} não foi encontrado(a)!`)
+} else {
+      console.log(`${busca} está matrículado(a) (Índice ${iachou})`)
+}
 
 console.log("_______________________________");
 
@@ -213,21 +213,21 @@ const livros = [
 // d) Exiba o título do livro com MAIS páginas.
 
 // → Seu código aqui:
-// let soma = 0
-// let maisPaginas = livros[0].paginas
+let soma = 0
+let maisPaginas = livros[0].paginas
 
-// console.table(livros)
+console.table(livros)
 
-// for (let i = 0; i < livros.length; i++) {
-//       soma += livros[i].paginas
-//       media = soma / livros.length
+for (let i = 0; i < livros.length; i++) {
+      soma += livros[i].paginas
+      media = soma / livros.length
 
-//       if (livros[i].paginas > maisPaginas) {
-//             maisPaginas = livros[i].titulo
-//       }
-// }
-// console.log(`Título com mais paginas do vetor: ${maisPaginas}`)
-// console.log(`Média de páginas por livro: ${media}`)
+      if (livros[i].paginas > maisPaginas) {
+            maisPaginas = livros[i].titulo
+      }
+}
+console.log(`Título com mais paginas do vetor: ${maisPaginas}`)
+console.log(`Média de páginas por livro: ${media}`)
 
 console.log("_______________________________");
 
@@ -246,23 +246,23 @@ const idades = [12, 17, 21, 15, 30, 45, 9, 67, 19, 8];
 
 // → Seu código aqui:
 
-// let menor = []
-// let maior = []
+let menorr = []
+let maiorr = []
 
-// for(let i = 0; i < idades.length; i++){
-//       if(idades[i] < 18){
-//             menor.push(idades[i])
+for(let i = 0; i < idades.length; i++){
+      if(idades[i] < 18){
+            menor.push(idades[i])
 
-//       }else if(idades[i] >= 18) {
-//             maior.push(idades[i])
-//       }
-// }
+      }else if(idades[i] >= 18) {
+            maior.push(idades[i])
+      }
+}
 
-// console.log(`
-//       Menores de idade: ${menor}
-//       Maiores de idade: ${maior}
-//       ${menor.length} Menores de idade.
-//       ${maior.length} Maiores de idade.`)
+console.log(`
+      Menores de idade: ${menor}
+      Maiores de idade: ${maior}
+      ${menor.length} Menores de idade.
+      ${maior.length} Maiores de idade.`)
 
 
 console.log("_______________________________");
