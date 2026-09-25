@@ -14,12 +14,12 @@ const rl = require('readline-sync');
 
 // → Seu código aqui:
 
-// let n = 1
+let n = 1
 
-// while(n <= 7) {
-//     console.log(`Contagem: ${n}`)
-//     n++
-// } console.log("Fim da contagem!")
+while(n <= 7) {
+    console.log(`Contagem: ${n}`)
+    n++
+} console.log("Fim da contagem!")
 
 console.log("_______________________________");
 
@@ -33,12 +33,12 @@ console.log("_______________________________");
 
 // → Seu código aqui:
 
-// let regressiva = 10
+let regressiva = 10
 
-// while(regressiva >=0) {
-//     console.log(`Contagem regressiva: ${regressiva}`)
-//     regressiva--
-// } console.log("Lançamento ON!")
+while(regressiva >=0) {
+    console.log(`Contagem regressiva: ${regressiva}`)
+    regressiva--
+} console.log("Lançamento ON!")
 
 console.log("_______________________________");
 
@@ -52,12 +52,12 @@ console.log("_______________________________");
 
 // → Seu código aqui:
 
-// let numero = rl.question('Digite um numero de 1 a 5: ')
+let numeroo = rl.question('Digite um numero de 1 a 5: ')
 
-// while(numero <1 || numero >5) {
-//     console.log("Valor fora do intervalo. Tente novamente.")
-//     numero = rl.question('Digite um numero de 1 a 5: ')
-// } console.log(`Você escolheu: ${numero}`)
+while(numeroo <1 || numeroo >5) {
+    console.log("Valor fora do intervalo. Tente novamente.")
+    numero = rl.question('Digite um numero de 1 a 5: ')
+} console.log(`Você escolheu: ${numero}`)
 
 console.log("_______________________________");
 
@@ -72,19 +72,19 @@ console.log("_______________________________");
 
 // → Seu código aqui:
 
-// let digitado = rl.questionInt('Digite um numero: ')
-// let vezes = 0
-// let soma = 0
+let digitado = rl.questionInt('Digite um numero: ')
+let vezes = 0
+let somaa = 0
 
-// while(digitado !== 0) {
-//     soma += digitado
-//     vezes++
+while(digitado !== 0) {
+    soma += digitado
+    vezes++
     
-//     digitado = rl.questionInt('Digite um numero: ')
-// } 
+    digitado = rl.questionInt('Digite um numero: ')
+} 
 
-// console.log(`${soma}`)
-// console.log(`${--vezes}`)
+console.log(`${soma}`)
+console.log(`${--vezes}`)
 
 console.log("_______________________________");
 
@@ -98,35 +98,35 @@ console.log("_______________________________");
 
 // → Seu código aqui:
 
-// let notas = 0
-// let soma = 0
-// let media = 0
-// let quantidade = 0
+let notas = 0
+let soma = 0
+let media = 0
+let quantidade = 0
 
-// while(notas !== -1) {
-//     let entradaValida = false
+while(notas !== -1) {
+    let entradaValida = false
     
-//     while(!entradaValida) {
-//         notas = rl.questionFloat('Digite notas de 0 a 10 e -1 para parar: ')
+    while(!entradaValida) {
+        notas = rl.questionFloat('Digite notas de 0 a 10 e -1 para parar: ')
         
-//         if((notas < 0 && notas !== -1) || notas > 10) {
-//             console.log('Nota inválida.')
-//         } else {
-//             entradaValida = true
-//         }
-//     }
+        if((notas < 0 && notas !== -1) || notas > 10) {
+            console.log('Nota inválida.')
+        } else {
+            entradaValida = true
+        }
+    }
     
-//     if(notas !== -1) {
-//         soma += notas
-//         quantidade++
-//         console.log(`Total das notas: ${soma}`)
-//     }
-// }
+    if(notas !== -1) {
+        soma += notas
+        quantidade++
+        console.log(`Total das notas: ${soma}`)
+    }
+}
 
-// if(quantidade > 0) {
-//     media = (soma / quantidade)
-//     console.log(`Total das notas é: ${soma} e sua média foi de: ${media.toFixed(2)}`)
-// }
+if(quantidade > 0) {
+    media = (soma / quantidade)
+    console.log(`Total das notas é: ${soma} e sua média foi de: ${media.toFixed(2)}`)
+}
 
 console.log("_______________________________");
 
@@ -143,31 +143,31 @@ console.log("_______________________________");
 
 // → Seu código aqui:
 
-// let menu
+let menu
 
-// do {
-//     console.log(`        1 - EXIBIR HORA ATUAL
-//         2 - EXIBIR DATA ATUAL
-//         0 - SAIR
-//         `)
-//         menu = rl.questionInt("Digite um numero do Menu: ")
+do {
+    console.log(`        1 - EXIBIR HORA ATUAL
+        2 - EXIBIR DATA ATUAL
+        0 - SAIR
+        `)
+        menu = rl.questionInt("Digite um numero do Menu: ")
 
-//         switch(menu) {
-//             case 1:
-//                 console.log(new Date().toLocaleTimeString())
-//                 break
-//             case 2:
-//                 console.log(new Date().toLocaleDateString())
-//                 break
-//             case 0:
-//                 console.log('Saindo...')
-//                 break
-//             default:
-//                 console.log('OPÇÃO INVÁLIDA, DIGITE NOVAMENTE!')
-//                 break
-//         }
+        switch(menu) {
+            case 1:
+                console.log(new Date().toLocaleTimeString())
+                break
+            case 2:
+                console.log(new Date().toLocaleDateString())
+                break
+            case 0:
+                console.log('Saindo...')
+                break
+            default:
+                console.log('OPÇÃO INVÁLIDA, DIGITE NOVAMENTE!')
+                break
+        }
 
-// } while(menu !== 0)
+} while(menu !== 0)
 
 
 console.log("_______________________________");
@@ -275,22 +275,22 @@ console.log("_______________________________");
 
 // → Seu código aqui:
 
-// let saldo = 1000
-// let rodada = 0
+let saldo = 1000
+let rodada = 0
 
-// while(saldo > 0 && rodada < 10) {
-//     let saque = Math.floor(Math.random() * (200 - 50 + 1)) + 50
-//     if(saque > saldo) {
-//         console.log("Saldo insuficiente. Fim!")
-//         break
-//     } else {
-//         saldo -= saque
-//         rodada++
-//         console.log(`Rodada ${rodada}: sacou R$ ${saque} | Novo saldo: R$ ${saldo}`)
-//     }
-// }
+while(saldo > 0 && rodada < 10) {
+    let saque = Math.floor(Math.random() * (200 - 50 + 1)) + 50
+    if(saque > saldo) {
+        console.log("Saldo insuficiente. Fim!")
+        break
+    } else {
+        saldo -= saque
+        rodada++
+        console.log(`Rodada ${rodada}: sacou R$ ${saque} | Novo saldo: R$ ${saldo}`)
+    }
+}
 
-// console.log(`Saldo restante: R$ ${saldo} | Total de rodadas: ${rodada}`)
+console.log(`Saldo restante: R$ ${saldo} | Total de rodadas: ${rodada}`)
 
 console.log("_______________________________");
 
@@ -309,21 +309,21 @@ console.log("_______________________________");
 
 // → Seu código aqui:
 
-// let contatos = []
-// let cadastro = true
+let contatos = []
+let cadastro = true
 
-// do {
-//     let contato = {
-//         nome: rl.question('Qual o nome do seu contato? '),
-//         telefone: rl.questionInt('Qual o numero do seu contato? ')
-//     }
-//     contatos.push(contato)
+do {
+    let contato = {
+        nome: rl.question('Qual o nome do seu contato? '),
+        telefone: rl.questionInt('Qual o numero do seu contato? ')
+    }
+    contatos.push(contato)
 
-//     cadastro = rl.keyInYN('Deseja cadastrar outro contato? ')
+    cadastro = rl.keyInYN('Deseja cadastrar outro contato? ')
 
-// } while(cadastro)
+} while(cadastro)
 
-// console.table(contatos)
-// console.log(`Total de contatos cadastrados: ${contatos.length}`)
+console.table(contatos)
+console.log(`Total de contatos cadastrados: ${contatos.length}`)
 
 console.log("_______________________________");
