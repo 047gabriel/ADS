@@ -12,14 +12,14 @@ const rl = require("readline-sync")
 
 // → Seu código aqui:
 
-// for(let i = 1; i <= 100; i++) {
-//       console.log(`${i}`)
-//       if(i % 7 === 0 && i > 30) {
+for(let i = 1; i <= 100; i++) {
+      console.log(`${i}`)
+      if(i % 7 === 0 && i > 30) {
 
-//             console.log(`Primero multiplo de 7 acima de 30: ${i}`)
-//             break
-//       }
-// }
+            console.log(`Primero multiplo de 7 acima de 30: ${i}`)
+            break
+      }
+}
 
 
 console.log("_______________________________");
@@ -36,15 +36,15 @@ const letras = ['a', 'b', 'c', 'e', 'f', 'i', 'k', 'o', 'p', 'u'];
 
 // → Seu código aqui:
 
-// let consoantes = 0
+let consoantes = 0
 
-// for(let i = 0; i < letras.length; i++) {
-//       if(letras[i] == 'a' || letras[i] == 'e' || letras[i] == 'i' || letras[i] == 'o' || letras[i] == 'u') {
-//             continue
-//       } else {
-//             console.log(`${letras[i]}`)
-//       } consoantes++
-// } console.log(`Consoantes exibidas: ${consoantes}`)
+for(let i = 0; i < letras.length; i++) {
+      if(letras[i] == 'a' || letras[i] == 'e' || letras[i] == 'i' || letras[i] == 'o' || letras[i] == 'u') {
+            continue
+      } else {
+            console.log(`${letras[i]}`)
+      } consoantes++
+} console.log(`Consoantes exibidas: ${consoantes}`)
 
 console.log("_______________________________");
 
@@ -65,25 +65,25 @@ const notasAlunoB = [8, 4.5, 6.3, 9];
 // → Seu código aqui:
 
 
-// for (let i = 0; i < notasAlunoA.length; i++) {
-//       if (notasAlunoA < 5) {
-//             console.log(`Reprovado ma nota: ${notasAlunoA[i]} - índice: ${i}`)
-//             break
+for (let i = 0; i < notasAlunoA.length; i++) {
+      if (notasAlunoA < 5) {
+            console.log(`Reprovado ma nota: ${notasAlunoA[i]} - índice: ${i}`)
+            break
 
-//       } if (i == notasAlunoA.length -1) {
-//             console.log('Aprovado')
-//       }
-// }
+      } if (i == notasAlunoA.length -1) {
+            console.log('Aprovado')
+      }
+}
 
-// for (let i = 0; i < notasAlunoB.length; i++) {
-//       if (notasAlunoB[i] < 5) {
-//             console.log(`Reprovado ma nota: ${notasAlunoB} - índice: ${i}`)
-//             break
+for (let i = 0; i < notasAlunoB.length; i++) {
+      if (notasAlunoB[i] < 5) {
+            console.log(`Reprovado ma nota: ${notasAlunoB} - índice: ${i}`)
+            break
 
-//       } if (i == notasAlunoB.length -1) {
-//             console.log('Aprovado')
-//       }
-// }
+      } if (i == notasAlunoB.length -1) {
+            console.log('Aprovado')
+      }
+}
 
 console.log("_______________________________");
 
@@ -101,26 +101,26 @@ console.log("_______________________________");
 
 // → Seu código aqui:
 
-// let palavra = 'js'
-// let tentativas = 0
-// let valido = false
+let palavra = 'js'
+let tentativas = 0
+let valido = false
 
-// while(valido === false) {
-//       let adivinha = rl.question('Adivinha a palavra? ')
+while(valido === false) {
+      let adivinha = rl.question('Adivinha a palavra? ')
 
-//       if(adivinha === palavra) {
-//             console.log("Parabéns! Você acertou!")
-//             valido = true
-//             tentativas++
-//             break
+      if(adivinha === palavra) {
+            console.log("Parabéns! Você acertou!")
+            valido = true
+            tentativas++
+            break
 
-//       } else {
-//             console.log('Errou! Tente novamente.')
-//             tentativas++
-//       }
-// }
+      } else {
+            console.log('Errou! Tente novamente.')
+            tentativas++
+      }
+}
 
-// console.log(`Você precisou de ${tentativas} tentativas para acertar!`)
+console.log(`Você precisou de ${tentativas} tentativas para acertar!`)
 
 console.log("_______________________________");
 
@@ -138,26 +138,26 @@ console.log("_______________________________");
 
 // → Seu código aqui:
 
-// let numeros = rl.questionFloat('Digite numeros para somar: ')
-// let soma = 0
-// let quantidade = 0
+let numeros = rl.questionFloat('Digite numeros para somar: ')
+let soma = 0
+let quantidade = 0
 
-// while (numeros != 0) {
-//       if (numeros < 0) {
-//             console.log("Ignorando números negativos.")
-//             numeros = rl.questionFloat('Digite mais numeros ou 0 para parar: ')
+while (numeros != 0) {
+      if (numeros < 0) {
+            console.log("Ignorando números negativos.")
+            numeros = rl.questionFloat('Digite mais numeros ou 0 para parar: ')
 
-//       } else {
-//             soma += numeros
-//             quantidade++
-//             numeros = rl.questionFloat('Digite mais numeros ou 0 para parar: ')
-//       }
-// } if (soma > 0) {
-//       console.log(`
-//       Soma dos positivos: ${soma}
-//       Quantidade de positivos: ${quantidade}
-//       `)
-// }
+      } else {
+            soma += numeros
+            quantidade++
+            numeros = rl.questionFloat('Digite mais numeros ou 0 para parar: ')
+      }
+} if (soma > 0) {
+      console.log(`
+      Soma dos positivos: ${soma}
+      Quantidade de positivos: ${quantidade}
+      `)
+}
 
 
 console.log("_______________________________");
@@ -181,19 +181,19 @@ const alunos = [
 // → Seu código aqui:
 
 
-// let menor5 = null
+let menor5 = null
 
-// for (let i = 0; i < alunos.length; i++) {
-//       if (alunos[i].nota < 5) {
+for (let i = 0; i < alunos.length; i++) {
+      if (alunos[i].nota < 5) {
 
-//             menor5 = alunos[i]
-//             console.log(menor5)
-//             break
-//       }
-// } 
-// if(menor5 === null) {
-//       console.log(null)
-// }
+            menor5 = alunos[i]
+            console.log(menor5)
+            break
+      }
+} 
+if(menor5 === null) {
+      console.log(null)
+}
 
 console.log("_______________________________");
 
@@ -213,25 +213,25 @@ const vendas = [320, -1, 150, -1, 80, 410, -1, 200];
 
 // → Seu código aqui:
 
-// let vendasValidas = 0
-// let soma = 0
-// let media = 0
+let vendasValidas = 0
+let somaa = 0
+let media = 0
 
-// for(let i = 0; i < vendas.length; i ++) {
-//       if(vendas[i] < 1) {
-//             continue
-//       } else {
-//             soma += vendas[i]
-//             vendasValidas++
-//       }
-//       media = soma / vendasValidas
-// } 
-// if(media > 0) {
-//       console.log(`
-//       Vendas validas: ${vendasValidas}
-//       Total arrecadado: R$ ${soma}
-//       Ticket medio: R$ ${media.toFixed(2)}`)
-// }
+for(let i = 0; i < vendas.length; i ++) {
+      if(vendas[i] < 1) {
+            continue
+      } else {
+            soma += vendas[i]
+            vendasValidas++
+      }
+      media = soma / vendasValidas
+} 
+if(media > 0) {
+      console.log(`
+      Vendas validas: ${vendasValidas}
+      Total arrecadado: R$ ${soma}
+      Ticket medio: R$ ${media.toFixed(2)}`)
+}
 
 console.log("_______________________________");
 
@@ -247,6 +247,16 @@ console.log("_______________________________");
 // e) Ao final: "Laço encerrado em i = <i> | Soma final: <soma>"
 
 // → Seu código aqui:
+
+let soma2 = 0
+
+for(let i = 1; i <= 50; i++) {
+      if(i % 5 === 0) {
+            continue
+      }
+      soma2 += i
+      console.log(`Somando: ${i} | Acumulado: ${soma2}`)
+}
 
 
 console.log("_______________________________");
