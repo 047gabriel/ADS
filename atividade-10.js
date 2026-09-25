@@ -188,49 +188,49 @@ console.log("_______________________________");
 
 // → Seu código aqui:
 
-// min = Math.ceil(1);
-// max = Math.floor(50);
+min = Math.ceil(1);
+max = Math.floor(50);
 
-// let aleatorio = Math.floor(Math.random() * (max - min) + min);
-// let nome = rl.question('Qual o seu nome? ')
-// let chute = 0
-// let tentativas = 0
+let aleatorio = Math.floor(Math.random() * (max - min) + min);
+let nome = rl.question('Qual o seu nome? ')
+let chute = 0
+let tentativas = 0
 
-// while(chute !== aleatorio) {
-//     chute = rl.questionInt('Chute um numero de 1 a 50: ')
-//     if(chute < 1 || chute > 50) {
-//         console.log('Número inválido!')
+while(chute !== aleatorio) {
+    chute = rl.questionInt('Chute um numero de 1 a 50: ')
+    if(chute < 1 || chute > 50) {
+        console.log('Número inválido!')
 
-//         } else {
+        } else {
 
-//         if(chute > aleatorio) {
-//             console.log('DICA, É MAIS BAIXO!')
-//             tentativas++
+        if(chute > aleatorio) {
+            console.log('DICA, É MAIS BAIXO!')
+            tentativas++
 
-//         } else if(chute < aleatorio) {
-//             console.log('DICA, É MAIS ALTO!')
-//             tentativas++
+        } else if(chute < aleatorio) {
+            console.log('DICA, É MAIS ALTO!')
+            tentativas++
 
-//         } else {
-//             tentativas++
-//             if(tentativas > 0 && tentativas <= 3) {
-//                 console.log(`${nome} Tá usando que tipo de bruxaria?? Pra acertar em ${tentativas} vezes sendo que o número era ${aleatorio}`)
+        } else {
+            tentativas++
+            if(tentativas > 0 && tentativas <= 3) {
+                console.log(`${nome} Tá usando que tipo de bruxaria?? Pra acertar em ${tentativas} vezes sendo que o número era ${aleatorio}`)
 
-//             } else if(tentativas > 3 && tentativas <= 5) {
-//                 console.log(`${nome} Acertou em ${tentativas} vezes? Tá suspeito isso, certeza que é IAkkkkkk acertou o ${aleatorio}`)
+            } else if(tentativas > 3 && tentativas <= 5) {
+                console.log(`${nome} Acertou em ${tentativas} vezes? Tá suspeito isso, certeza que é IAkkkkkk acertou o ${aleatorio}`)
 
-//             } else if(tentativas > 5 && tentativas <= 7) {
-//                 console.log(`${nome} Tu foi bem, usando lógica matemática qualquer um consegue acertar em ${tentativas} vezes e o número era ${aleatorio}`)
+            } else if(tentativas > 5 && tentativas <= 7) {
+                console.log(`${nome} Tu foi bem, usando lógica matemática qualquer um consegue acertar em ${tentativas} vezes e o número era ${aleatorio}`)
 
-//             } else if(tentativas > 7 && tentativas <= 10) {
-//                 console.log(`${nome} Você tentou mesmo ou só chutou qualquer coisa? Acertou em ${tentativas} vezes o ${aleatorio}`)
+            } else if(tentativas > 7 && tentativas <= 10) {
+                console.log(`${nome} Você tentou mesmo ou só chutou qualquer coisa? Acertou em ${tentativas} vezes o ${aleatorio}`)
 
-//             } else if(tentativas > 10) {
-//                 console.log(`O cara se esforça pra ser burro tambémkkkkkkk, ${nome} precisou de ${tentativas} tentativas pra acertar o ${aleatorio}`)
-//             }
-//         }
-//     }
-// }
+            } else if(tentativas > 10) {
+                console.log(`O cara se esforça pra ser burro tambémkkkkkkk, ${nome} precisou de ${tentativas} tentativas pra acertar o ${aleatorio}`)
+            }
+        }
+    }
+}
 
 console.log("_______________________________");
 
@@ -244,20 +244,20 @@ console.log("_______________________________");
 
 // → Seu código aqui:
 
-// let numero = rl.questionInt('Escolha um numero para tabuada de 1 a 10: ')
-// let x = 0
-// let resultado = 0
+let numero = rl.questionInt('Escolha um numero para tabuada de 1 a 10: ')
+let x = 0
+let resultado = 0
 
-// while(x < 10) {
-//     if(numero <= 0 || numero > 10) {
-//         numero = rl.questionInt('DE 1 A 10: ')
+while(x < 10) {
+    if(numero <= 0 || numero > 10) {
+        numero = rl.questionInt('DE 1 A 10: ')
 
-//         } else {
-//         x++
-//         resultado = (x * numero)
-//         console.log(`${numero} x ${x} = ${resultado}`)
-//         }
-// }
+        } else {
+        x++
+        resultado = (x * numero)
+        console.log(`${numero} x ${x} = ${resultado}`)
+        }
+}
 
 console.log("_______________________________");
 
