@@ -32,15 +32,15 @@ function tamanhoMin(senha, min) {
 }
 console.log(tamanhoMin('12345', 5))
 
-// function temNum(senha){
-//     const anyNum = senha.split('')
-//     for(let i = 0; i < anyNum.length; i++){
-//         if(anyNum[i] === '0' || anyNum[i] === '1' || anyNum[i] === '2' || anyNum[i] === '3' || anyNum[i] === '4' || anyNum[i] === '5'
-//             || anyNum[i] === '6' || anyNum[i] === '7' || anyNum[i] === '8' || anyNum[i] === '9')
-//             return true
-//         }
-//         return false
-// }
+function temNum(senha){
+    const anyNum = senha.split('')
+    for(let i = 0; i < anyNum.length; i++){
+        if(anyNum[i] === '0' || anyNum[i] === '1' || anyNum[i] === '2' || anyNum[i] === '3' || anyNum[i] === '4' || anyNum[i] === '5'
+            || anyNum[i] === '6' || anyNum[i] === '7' || anyNum[i] === '8' || anyNum[i] === '9')
+            return true
+        }
+        return false
+}
 // // console.log(temNum('freitas1'))
 
 function temNum(senha) {
