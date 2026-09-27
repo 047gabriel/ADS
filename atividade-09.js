@@ -13,9 +13,9 @@ const rl = require('readline-sync');
 
 // → Seu código aqui:
 
-// for (let i = 5; i <= 12; i++) {
-//    console.log(`Contagem de 5 até ${i}`)
-// }
+for (let i = 5; i <= 12; i++) {
+   console.log(`Contagem de 5 até ${i}`)
+}
 
 console.log("_______________________________");
 
@@ -29,9 +29,9 @@ console.log("_______________________________");
 
 // → Seu código aqui:
 
-// for (let i = 10; i >= 3; --i) {
-//     console.log(`Contagem regressiva: ${i}`);
-// } console.log("Lançamento! 🚀");
+for (let i = 10; i >= 3; --i) {
+    console.log(`Contagem regressiva: ${i}`);
+} console.log("Lançamento! 🚀");
 
 console.log("_______________________________");
 
@@ -44,14 +44,14 @@ console.log("_______________________________");
 
 // → Seu código aqui:
 
-// let contador = 0
+let contador = 0
 
-// for (i = 0; i <= 30; i += 2) {
-//     console.log(`${i}`)
-//     contador++
-// }
+for (i = 0; i <= 30; i += 2) {
+    console.log(`${i}`)
+    contador++
+}
 
-// console.log(`A quantidade de numeros pares é ${contador}`)
+console.log(`A quantidade de numeros pares é ${contador}`)
 
 console.log("_______________________________");
 
@@ -65,11 +65,11 @@ console.log("_______________________________");
 
 // → Seu código aqui:
 
-// let a = rl.questionInt('Digite um numero para a tabuada: ')
+let a = rl.questionInt('Digite um numero para a tabuada: ')
 
-// for (let i = 1; i <= 10; i++) {
-//     console.log(`${a} x ${i} = ${(a * i)}`)
-// }
+for (let i = 1; i <= 10; i++) {
+    console.log(`${a} x ${i} = ${(a * i)}`)
+}
 
 console.log("_______________________________");
 
@@ -83,14 +83,14 @@ console.log("_______________________________");
 
 // → Seu código aqui:
 
-// let n = rl.questionInt('Digite um numero inteiro positivo: ')
-// let soma = 0
+let m = rl.questionInt('Digite um numero inteiro positivo: ')
+let somaaa = 0
 
-// for (let i = 1; i <= n; i++) {
-//     soma += i
+for (let i = 1; i <= n; i++) {
+    somaaa += i
 
-// }
-// console.log(`A soma de 1 até ${n} é ${soma}`)
+}
+console.log(`A soma de 1 até ${n} é ${soma}`)
 
 // ------------------------------------------------------------
 // EXERCÍCIO 6 – Fatorial
@@ -103,18 +103,18 @@ console.log("_______________________________");
 
 // → Seu código aqui:
 
-// let n = rl.questionInt('Digite um nuumero de 1 a 10: ')
-// let fatorial = 1
+let n = rl.questionInt('Digite um nuumero de 1 a 10: ')
+let fatorial = 1
 
-// if (n < 1 || n > 10) {
-//     console.log('Número inválido')
+if (n < 1 || n > 10) {
+    console.log('Número inválido')
 
-// } else
+} else
 
-// for (let i = 1; i <= n; i++) {
-//     fatorial *= i
-//     console.log(`${i}! = ${fatorial}`)
-// }
+for (let i = 1; i <= n; i++) {
+    fatorial *= i
+    console.log(`${i}! = ${fatorial}`)
+}
 
 console.log("_______________________________");
 
@@ -130,10 +130,10 @@ console.log("_______________________________");
 
 // → Seu código aqui:
 
-// for (let i = 0; i < cidades.length; i++) {
-//     console.log(`[${i}] - ${cidades[i]}`)
-// }
-// console.log(`O total de cidades é ${cidades.length}`)
+for (let i = 0; i < cidades.length; i++) {
+    console.log(`[${i}] - ${cidades[i]}`)
+}
+console.log(`O total de cidades é ${cidades.length}`)
 console.log("_______________________________");
 
 
@@ -149,22 +149,22 @@ console.log("_______________________________");
 
 // → Seu código aqui:
 
-// const temperaturas = [28, 15, 32, 9, 21, 37, 14, 25]
+const temperaturas = [28, 15, 32, 9, 21, 37, 14, 25]
 
-// let maior = temperaturas[0]
-// let menor = temperaturas[0]
+let maior = temperaturas[0]
+let menor = temperaturas[0]
 
-// for (let i = 0; i < temperaturas.length; i++) {
-//     if (temperaturas[i] > maior) {
-//         maior = temperaturas[i]
+for (let i = 0; i < temperaturas.length; i++) {
+    if (temperaturas[i] > maior) {
+        maior = temperaturas[i]
 
-//     if (temperaturas[i] < menor) {
-//         menor = temperaturas[i]
-//     }
-// }
-// }   
-// console.log(`Maior temperatura: ${maior}`)
-// console.log(`Menor temperatura: ${menor}`)
+    if (temperaturas[i] < menor) {
+        menor = temperaturas[i]
+    }
+}
+}   
+console.log(`Maior temperatura: ${maior}`)
+console.log(`Menor temperatura: ${menor}`)
 
 
 console.log("_______________________________");
@@ -182,18 +182,18 @@ console.log("_______________________________");
 
 // → Seu código aqui:
 
-// let menores = 0
-// let maiores = 0
+let menores = 0
+let maiores = 0
 
-// for (let i = 0; i < idades.length; i++) {
-//     if (idades[i] < 18) {
-//         menores++;
-//     } else {
-//         maiores++;
-//     }
-// }
-// console.log(`Tem ${menores} pessoas menores de idade`);
-// console.log(`Tem ${maiores} pessoas maiores de idade`);
+for (let i = 0; i < idades.length; i++) {
+    if (idades[i] < 18) {
+        menores++;
+    } else {
+        maiores++;
+    }
+}
+console.log(`Tem ${menores} pessoas menores de idade`);
+console.log(`Tem ${maiores} pessoas maiores de idade`);
 
 console.log("_______________________________");
 
@@ -211,26 +211,26 @@ console.log("_______________________________");
 
 // → Seu código aqui:
 
-// let soma = 0
-// let media = 0
+let somaa = 0
+let mediaa = 0
 
-// for (let i = 0; i < salarios.length; i++) {
-//     soma += salarios[i]
+for (let i = 0; i < salarios.length; i++) {
+    somaa += salarios[i]
 
-// }
-// media = (soma / salarios.length)
+}
+media = (soma / salarios.length)
 
-// console.log(`A média salárial é R$ ${media.toFixed(2)}`)
+console.log(`A média salárial é R$ ${media.toFixed(2)}`)
 
-// for (let i = 0; i < salarios.length; i++) {
+for (let i = 0; i < salarios.length; i++) {
 
-//     if (salarios[i] < media) {
-//         console.log(`R$${salarios[i]} - Abaixo da média`)
+    if (salarios[i] < media) {
+        console.log(`R$${salarios[i]} - Abaixo da média`)
 
-//     } else if (salarios[i] > media) {
-//         console.log(`R$${salarios[i]} - Acima da média`)
-//     }
-// }
+    } else if (salarios[i] > media) {
+        console.log(`R$${salarios[i]} - Acima da média`)
+    }
+}
 
 console.log("_______________________________");
 
@@ -254,58 +254,58 @@ console.log("_______________________________");
 
 // → Seu código aqui:
 
-// let aluno1 = {
-//     nome: rl.question('Digite o nome do aluno 1: '),
-//     notas: [
-//         rl.questionFloat('Digite a nota 1 do aluno 1: '),
-//         rl.questionFloat('Digite a nota 2 do aluno 1: '),
-//         rl.questionFloat('Digite a nota 3 do aluno 1: ')
-//     ]
-// }
+let aluno1 = {
+    nome: rl.question('Digite o nome do aluno 1: '),
+    notas: [
+        rl.questionFloat('Digite a nota 1 do aluno 1: '),
+        rl.questionFloat('Digite a nota 2 do aluno 1: '),
+        rl.questionFloat('Digite a nota 3 do aluno 1: ')
+    ]
+}
 
-// let aluno2 = {
-//     nome: rl.question('Digite o nome do aluno 2: '),
-//     notas: [
-//         rl.questionFloat('Digite a nota 1 do aluno 2: '),
-//         rl.questionFloat('Digite a nota 2 do aluno 2: '),
-//         rl.questionFloat('Digite a nota 3 do aluno 2: ')
-//     ]
-// }
+let aluno2 = {
+    nome: rl.question('Digite o nome do aluno 2: '),
+    notas: [
+        rl.questionFloat('Digite a nota 1 do aluno 2: '),
+        rl.questionFloat('Digite a nota 2 do aluno 2: '),
+        rl.questionFloat('Digite a nota 3 do aluno 2: ')
+    ]
+}
 
-// let aluno3 = {
-//     nome: rl.question('Digite o nome do aluno 3: '),
-//     notas: [
-//         rl.questionFloat('Digite a nota 1 do aluno 3: '),
-//         rl.questionFloat('Digite a nota 2 do aluno 3: '),
-//         rl.questionFloat('Digite a nota 3 do aluno 3: ')
-//     ]
-// }
+let aluno3 = {
+    nome: rl.question('Digite o nome do aluno 3: '),
+    notas: [
+        rl.questionFloat('Digite a nota 1 do aluno 3: '),
+        rl.questionFloat('Digite a nota 2 do aluno 3: '),
+        rl.questionFloat('Digite a nota 3 do aluno 3: ')
+    ]
+}
 
-// let media = 0
-// let soma = 0
-// let turma = [aluno1, aluno2, aluno3]
+let media = 0
+let soma = 0
+let turma = [aluno1, aluno2, aluno3]
 
-// for (let i = 0; i < turma.length; i++) {
+for (let i = 0; i < turma.length; i++) {
 
-//     for (let j = 0; j < turma[i].notas.length; j++) {
-//         soma += turma[i].notas[j];
+    for (let j = 0; j < turma[i].notas.length; j++) {
+        soma += turma[i].notas[j];
 
-//     }
-//     media = soma / turma[i].notas.length;
+    }
+    media = soma / turma[i].notas.length;
 
-//     soma = 0
+    soma = 0
 
-//     if (media >= 7) {
-//         console.log(`${turma[i].nome} | Nota: ${media.toFixed(2)} | Situação: APROVADO!`)
+    if (media >= 7) {
+        console.log(`${turma[i].nome} | Nota: ${media.toFixed(2)} | Situação: APROVADO!`)
 
-//     } else if (media >= 5 && media < 7) {
-//         console.log(`${turma[i].nome} | Nota: ${media.toFixed(2)} | Situação: RECUPERAÇÃO!`)
+    } else if (media >= 5 && media < 7) {
+        console.log(`${turma[i].nome} | Nota: ${media.toFixed(2)} | Situação: RECUPERAÇÃO!`)
 
-//     } else if(media < 5) {
-//         console.log(`${turma[i].nome} | Nota: ${media.toFixed(2)} | Situação: REPROVADO!`)
-//     }
+    } else if(media < 5) {
+        console.log(`${turma[i].nome} | Nota: ${media.toFixed(2)} | Situação: REPROVADO!`)
+    }
 
-// }
+}
 
 
 
@@ -327,38 +327,38 @@ console.log("_______________________________");
 
 // → Seu código aqui:
 
-// let produtos = rl.questionInt('Quantos produtos deseja cadastrar? ');
-// let estoque = [];
+let produtos = rl.questionInt('Quantos produtos deseja cadastrar? ');
+let estoque = [];
 
-// for (let i = 0; i < produtos; i++) {
-//     estoque.push({
-//         nome: rl.question('Digite o nome do produto: '),
-//         preco: rl.questionFloat('Digite o preco: ')
-//     });
-// }
+for (let i = 0; i < produtos; i++) {
+    estoque.push({
+        nome: rl.question('Digite o nome do produto: '),
+        preco: rl.questionFloat('Digite o preco: ')
+    });
+}
 
 
-// for (let i = 0; i < estoque.length; i++) {
-//     console.log(`${estoque[i].nome}: R$ ${estoque[i].preco.toFixed(2)}`);
-// }
+for (let i = 0; i < estoque.length; i++) {
+    console.log(`${estoque[i].nome}: R$ ${estoque[i].preco.toFixed(2)}`);
+}
 
-// let maisCaro = estoque[0];
-// let maisBarato = estoque[0];
+let maisCaro = estoque[0];
+let maisBarato = estoque[0];
 
-// for (let i = 1; i < estoque.length; i++) {
-//     if (estoque[i].preco > maisCaro.preco) {
-//         maisCaro = estoque[i];
-//     }
-//     if (estoque[i].preco < maisBarato.preco) {
-//         maisBarato = estoque[i];
-//     }
-// }
+for (let i = 1; i < estoque.length; i++) {
+    if (estoque[i].preco > maisCaro.preco) {
+        maisCaro = estoque[i];
+    }
+    if (estoque[i].preco < maisBarato.preco) {
+        maisBarato = estoque[i];
+    }
+}
 
-// console.log(`Produto mais caro: ${maisCaro.nome} - R$ ${maisCaro.preco.toFixed(2)}`);
-// console.log(`Produto mais barato: ${maisBarato.nome} - R$ ${maisBarato.preco.toFixed(2)}`);
+console.log(`Produto mais caro: ${maisCaro.nome} - R$ ${maisCaro.preco.toFixed(2)}`);
+console.log(`Produto mais barato: ${maisBarato.nome} - R$ ${maisBarato.preco.toFixed(2)}`);
 
-// console.log('Resumo do estoque:');
-// console.table(estoque);
+console.log('Resumo do estoque:');
+console.table(estoque);
 
 
 
