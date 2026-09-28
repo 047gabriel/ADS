@@ -61,14 +61,14 @@ console.log("_______________________________");
 //    Senão, exiba: "Jovem".
 
 // → Seu código aqui:
-// let idade = pegarInfo.questionInt('Digite a sua idade: ')
-// if(idade >= 18){
-//     console.log('Adulto')
-// } else if(idade < 12){
-//     console.log('Criança')
-// } else{
-//     console.log('Jovem')
-// }
+let idade = pegarInfo.questionInt('Digite a sua idade: ')
+if(idade >= 18){
+    console.log('Adulto')
+} else if(idade < 12){
+    console.log('Criança')
+} else{
+    console.log('Jovem')
+}
 
 console.log("_______________________________");
 
@@ -85,17 +85,17 @@ console.log("_______________________________");
 // c) AO final, exiba a nota e a situação com template literal.
 
 // → Seu código aqui:
-// let notaAluno = 6.8
-// let status 
-// if(notaAluno >= 9){
-//     status = "Aprovado com mérito"
-// } else if(notaAluno >= 7){
-//     status = Aprovado
-// } else if (notaAluno >= 5){
-//     status = 'Recuperação'
-// } else{
-//     status = 'Reprovado'
-// }
+let notaAluno = 6.8
+let status 
+if(notaAluno >= 9){
+    status = "Aprovado com mérito"
+} else if(notaAluno >= 7){
+    status = Aprovado
+} else if (notaAluno >= 5){
+    status = 'Recuperação'
+} else{
+    status = 'Reprovado'
+}
 
 // const resultado = (`A nota final foi ${notaAluno} e a situação é: ${status}`)
 // console.log(resultado)
