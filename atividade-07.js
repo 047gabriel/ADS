@@ -219,23 +219,23 @@ console.log("_______________________________");
 // e) Exiba uma mensagem final: "<nome>: <situação> (média: <média>)"
 
 // → Seu código aqui:
-// let aluno = {
-//     nome: pegarInfo.question('Digite o seu nome: '),
-//     prova1: pegarInfo.questionFloat('Digite a nota da primeira prova: '),
-//     prova2: pegarInfo.questionFloat('Digite a nota da segunda prova: '),
-// }
-// let media =(aluno.prova1 + aluno.prova2) / 2
-// let classificacao
-// if (media >= 7){
-//     classificacao = 'Aprovado'
-// } else if (media >= 5){
-//     classificacao = 'Em recuperação'
-// } else{
-//     classificacao = 'Reprovado'
-// }
-// console.table([aluno])
-// let resultado = (`${aluno.nome}: Sua situação é ${classificacao}: Sua média é: ${media}`)
-// console.log(resultado)
+let aluno = {
+    nome: pegarInfo.question('Digite o seu nome: '),
+    prova1: pegarInfo.questionFloat('Digite a nota da primeira prova: '),
+    prova2: pegarInfo.questionFloat('Digite a nota da segunda prova: '),
+}
+let media =(aluno.prova1 + aluno.prova2) / 2
+let classificacaoo
+if (media >= 7){
+    classificacaoo = 'Aprovado'
+} else if (media >= 5){
+    classificacaoo = 'Em recuperação'
+} else{
+    classificacaoo = 'Reprovado'
+}
+console.table([aluno])
+let resultadoo = (`${aluno.nome}: Sua situação é ${classificacaoo}: Sua média é: ${media}`)
+console.log(resultadoo)
 
 console.log("_______________________________");
 
