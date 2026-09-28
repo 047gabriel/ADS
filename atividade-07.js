@@ -114,21 +114,21 @@ console.log("_______________________________");
 //    - temperatura > 35           → "Muito quente"
 
 // → Seu código aqui:
-// let temperatura = pegarInfo.questionFloat('Digite a temperatura atual: ')
-// let classificacao
-// if (temperatura < 10){
-//     classificacao = 'Muito frio'
-// } else if (temperatura >= 10 && temperatura < 18){
-//     classificacao = 'Frio'
-// } else if (temperatura >= 18 && temperatura <= 25){
-//     classificacao = 'Agradável'
-// } else if (temperatura >25 && temperatura <= 35)
-//     classificacao = 'Quente'
-//     else{
-//     classificacao = 'Muito quente'
-// }
-// let clima = (`A temperatura atual é ${temperatura} e está ${classificacao}`)
-// console.log(clima)
+let temperatura = pegarInfo.questionFloat('Digite a temperatura atual: ')
+let classificacao
+if (temperatura < 10){
+    classificacao = 'Muito frio'
+} else if (temperatura >= 10 && temperatura < 18){
+    classificacao = 'Frio'
+} else if (temperatura >= 18 && temperatura <= 25){
+    classificacao = 'Agradável'
+} else if (temperatura >25 && temperatura <= 35)
+    classificacao = 'Quente'
+    else{
+    classificacao = 'Muito quente'
+}
+let clima = (`A temperatura atual é ${temperatura} e está ${classificacao}`)
+console.log(clima)
 
 console.log("_______________________________");
 
@@ -165,16 +165,16 @@ console.log("_______________________________");
 //    - Senão          → exiba: "<nome>, você não atende aos requisitos."
 
 // → Seu código aqui:
-// let motorista = {
-//     nome: pegarInfo.question('Digite seu nome: '),
-//     idade: pegarInfo.questionInt('Digite a sua idade: '),
-//     cnh: pegarInfo.keyInYN('Possui habilitacao? ')
-// }
-// if (motorista.idade >= 21 && motorista.cnh){
-//     console.log(`${motorista.nome}, você pode alugar o veículo.`)
-// } else{
-//     console.log(`${motorista.nome}, você não atende os requisitos.`)
-// }
+let motorista = {
+    nome: pegarInfo.question('Digite seu nome: '),
+    idade: pegarInfo.questionInt('Digite a sua idade: '),
+    cnh: pegarInfo.keyInYN('Possui habilitacao? ')
+}
+if (motorista.idade >= 21 && motorista.cnh){
+    console.log(`${motorista.nome}, você pode alugar o veículo.`)
+} else{
+    console.log(`${motorista.nome}, você não atende os requisitos.`)
+}
 
 console.log("_______________________________");
 
