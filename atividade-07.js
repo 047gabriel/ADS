@@ -22,12 +22,12 @@ let pegarInfo = require('readline-sync')
 //    Mas se "pontos" for maior que 200, exiba somente: "Nível máximo alcançado!"
 
 // → Seu código aqui:
-// let pontos = 201
-// if (pontos > 220) {
-//     console.log('Nível alcancado!')
-// } else if(pontos > 200) {
-//     console.log('Nível maximo alcancado')
-// }
+let pontos = 201
+if (pontos > 220) {
+    console.log('Nível alcancado!')
+} else if(pontos > 200) {
+    console.log('Nível maximo alcancado')
+}
 console.log("_______________________________");
 
 
